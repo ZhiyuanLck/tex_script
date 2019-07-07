@@ -1,0 +1,8 @@
+setup.py
+texh.py
+texh.egg-info/PKG-INFO
+texh.egg-info/SOURCES.txt
+texh.egg-info/dependency_links.txt
+texh.egg-info/entry_points.txt
+texh.egg-info/requires.txt
+texh.egg-info/top_level.txt
