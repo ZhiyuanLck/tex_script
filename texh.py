@@ -14,10 +14,10 @@ def texh(link, code, name):
     os.chdir(name + '/src')
     os.mknod(name + '.tex')
     pdf = name + '.pdf'
-    os.system('ln -s ../output/%s %s/%s' % (pdf, link, pdf))
+    pardir = os.path.dirname(os.getcwd())
+    os.system('ln -s %s/output/%s %s/%s' % (pardir, pdf, link, pdf))
 
     if code:
-        os.chdir('..')
         with open('.latexmkrc', 'w') as f:
             f.write('$xelatex="xelatex --shell-escape %O %S"')
 
